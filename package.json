@@ -1,0 +1,58 @@
+{
+  "name": "love-after-love-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:markdavies/banksiabeachhouse.com.git",
+  "author": "Mark Davies <mark@madeby.holiday>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.1",
+    "copyfiles": "^2.1.1",
+    "cssnano": "^5.0.8",
+    "html-includes": "^4.2.0",
+    "element-closest": "^3.0.2",
+    "es6-promise": "^4.2.8",
+    "npm-watch": "^0.11.0",
+    "postcss": "^8.3.6",
+    "postcss-calc": "^8.0.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-nested": "^5.0.6",
+    "sugarss": "^4.0.1",
+    "svg-sprite": "^1.5.2",
+    "webpack": "^4.20.2",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.1.2",
+    "http-server": "^0.11.1"
+  },
+  "watch": {
+    "build:webpack": {
+      "patterns": [
+        "src/js"
+      ],
+      "extensions": "js"
+    },
+    "build:watch": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": [
+        "sss",
+        "css",
+        "html"
+      ]
+    }
+  },
+  "scripts": {
+    "build:watch": "yarn html-includes  --src src --dest dist && yarn build:postcss && copyfiles -u 2 src/img/* dist/img/",
+    "build:postcss": "postcss src/css/application.sss -o dist/css/application.css -m",
+    "build:webpack": "webpack -p",
+    "start": "concurrently \"yarn serve\" \"npm-watch\"",
+    "serve": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/dist\"",
+    "deploy": "export AWS_PROFILE=markdavies && cd dist && aws s3 sync . s3://music.markdavies.com.au --acl public-read --delete --region ap-southeast-2 && aws cloudfront create-invalidation --distribution-id E5SP02JDU3ZBA --paths '/*'"
+  }
+}

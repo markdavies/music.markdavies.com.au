@@ -1,0 +1,116 @@
+@import '_fonts'
+@import '_base'
+
+.title
+    font-family: 'Roboto Slab', serif
+    margin: 50px 0
+    font-size: 36px
+    text-align: center
+
+    .select-value
+        display: inline-block
+        position: relative
+        padding-right: 22px
+        border-bottom:  1px solid black
+        background: url(../img/down.svg)
+        background-size: 15px
+        background-position: center right
+        background-repeat: no-repeat
+
+        select
+            position: absolute
+            top: 0
+            left: 0
+            line-height: 48px
+            height: 48px
+            opacity: 0
+            width: 100%
+
+.intro
+    max-width: calc(100% - 40px)
+    margin: 50px auto
+    text-align: center
+
+    @media screen and (min-width: 768px)
+        max-width: 500px
+
+.tab
+    display:  none
+    max-width: calc(100% - 40px)
+    margin-left: 20px
+    flex-direction: column
+    align-items: center
+
+    @media screen and (min-width: 768px)
+        max-width: 1000px
+
+    &.active
+        display: flex
+
+    ol
+        margin:  50px 
+
+        li
+            margin-bottom: 10px
+
+        a
+            position: relative
+            text-decoration:  none
+            color:  black
+            padding-right: 25px
+            transition: background-image 250ms ease
+
+            span
+                display: block
+                position: absolute
+                right: 0
+                top: 0
+                width: 20px
+                height: 20px
+                opacity: 0
+                background: url(../img/spotify.svg)
+                background-size: 15px
+                background-position: center right
+                background-repeat: no-repeat
+                transition: opacity 250ms ease
+
+            &:hover span
+                opacity: .5
+
+            strong
+                font-weight: 600
+
+.spotify-link
+    background: url(../img/spotify.svg) #2ebd59
+    background-repeat: no-repeat
+    background-size: 26px
+    background-position: 10px
+    color: #000
+    font-family: 'Roboto Slab', serif
+    padding: 10px 15px 10px 50px
+    border-radius: 10px
+    text-decoration: none
+
+.pagination
+    max-width: calc(100% - 40px)
+    margin: 0 20px 100px 20px
+    text-align: center
+
+    a
+        margin: 10px 5px
+        display: inline-block
+        color: #ccc
+        text-decoration: none
+        line-height: 30px
+        border-bottom: 1px solid rgba(0,0,0,0)
+        transition: color 250ms ease, border 250ms ease
+
+        &.active,
+        &:hover
+            border-bottom: 1px solid black
+            color: black
+
+    @media screen and (min-width: 768px)
+        max-width: 500px
+        margin: 0 auto 100px auto
+
