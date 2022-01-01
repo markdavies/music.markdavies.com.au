@@ -1,8 +1,184 @@
 {
     "2021": [
         {
+            "title": "Great Spans of Muddy Time",
             "artist": "William Doyle",
-            "title": "Great Spans of Muddy Time"
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2739a92d3fc2cc9f8af11b8d285",
+            "link": "https://open.spotify.com/album/4DyNsfjvnoGuf3ULUqdWD7"
+        },
+        {
+            "title": "Ignorance",
+            "artist": "The Weather Station",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273ec01f5a2f56180b6f6b634ec",
+            "link": "https://open.spotify.com/album/3KeR5BDM2giFr8zoSXBrgE"
+        },
+        {
+            "title": "From Dreams to Dust",
+            "artist": "The Felice Brothers",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b27313ddb67e3e1207ad08650b47",
+            "link": "https://open.spotify.com/album/2yHBOaatHcvlgNQ7WPpNIS"
+        },
+        {
+            "title": "Magic Mirror",
+            "artist": "Pearl Charles",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2739ed72c5149deddc800efab2b",
+            "link": "https://open.spotify.com/album/0CZ1unL99MLInL492TOfOG"
+        },
+        {
+            "title": "I Don’t Live Here Anymore",
+            "artist": "The War On Drugs",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273e5cc34c45a829e0dad096157",
+            "link": "https://open.spotify.com/album/69jQsPvJzMvcb2fGqI2qaB"
+        },
+        {
+            "title": "New Long Leg",
+            "artist": "Dry Cleaning",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2732ff2517e5a77704ffb15b23f",
+            "link": "https://open.spotify.com/album/4oNy189uvEgnJKNLsWx9Zz"
+        },
+        {
+            "artist": "Sault",
+            "title": "Nine",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273a90c7142fe15a18f3c806a39",
+            "link": "https://open.spotify.com/album/7Kpv6XWZhGCwX6PSR4vWaX?si=jg94GaAMTOaey4MHlTK5Mw"
+        },
+        {
+            "title": "Vulture Prince",
+            "artist": "Arooj Aftab",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273fd247739c6b3bb01aec1c689",
+            "link": "https://open.spotify.com/album/6HrBTi1F76h7mJuQDHEijH"
+        },
+        {
+            "title": "Long Lost",
+            "artist": "Lord Huron",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2731c18ab47e15a19af3246a792",
+            "link": "https://open.spotify.com/album/5xiePX6kXj5ZsmUsqIqzeD"
+        },
+        {
+            "title": "Fun House",
+            "artist": "Hand Habits",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273fa04857b8296b2b2a267d861",
+            "link": "https://open.spotify.com/album/1LBaX90YupG7JKOHCWi4y0"
+        },
+        {
+            "title": "Prioritise Pleasure",
+            "artist": "Self Esteem",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273d6b7abfdc5dd8bb0690635db",
+            "link": "https://open.spotify.com/album/6Q4b8zTe5hFiDaUxNOiBih"
+        },
+        {
+            "title": "I Know I'm Funny haha",
+            "artist": "Faye Webster",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273c699d66824a938624c44c2b7",
+            "link": "https://open.spotify.com/album/424bxvpYyNDM2DFFibeKs0"
+        },
+        {
+            "title": "to hell with it",
+            "artist": "PinkPantheress",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273a3628ceab776845d33702b06",
+            "link": "https://open.spotify.com/album/65YAjLCn7Jp33nJpOxIPMe"
+        },
+        {
+            "title": "Build A Problem",
+            "artist": "dodie",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273f7ffbe10773c3f572b532cab",
+            "link": "https://open.spotify.com/album/2oMbQ7W1QddUdasTYrJdzE"
+        },
+        {
+            "title": "Wilds",
+            "artist": "Andy Shauf",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b27369d21907cef7670649373de5",
+            "link": "https://open.spotify.com/album/2IXuKQr2JhjocXGfkTmfPG"
+        },
+        {
+            "title": "Green to Gold",
+            "artist": "The Antlers",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273296e9404846a8a6da7d6bacf",
+            "link": "https://open.spotify.com/album/72XWeRa3UZSkxLkGs2kTHo"
+        },
+        {
+            "title": "Jubilee",
+            "artist": "Japanese Breakfast",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273b103a69ed742a7735a2ba7e8",
+            "link": "https://open.spotify.com/album/1uD1kdwTWH1DZQZqGKz6rY"
+        },
+        {
+            "title": "Monsters",
+            "artist": "Sophia Kennedy",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273b669a6a9a979bff22c1625d9",
+            "link": "https://open.spotify.com/album/0tMpjUzDuj8vJHnLqlOoCZ"
+        },
+        {
+            "title": "Loving In Stereo",
+            "artist": "Jungle",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2737fa67f6ecc8e28965727ceff",
+            "link": "https://open.spotify.com/album/1hykVcbmenjAoG7wwoXmCV"
+        },
+        {
+            "title": "still slipping vol. 1",
+            "artist": "Joy Orbison",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2731612e536371d6482100542fe",
+            "link": "https://open.spotify.com/album/5atrOg1aO4d5KEcYo4UBIA"
+        },
+        {
+            "title": "A Beginner's Mind",
+            "artist": "Sufjan Stevens, Angelo De Augustine",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2733068423a700e73fed16a74b5",
+            "link": "https://open.spotify.com/album/7AS9VaIdnYSR13T3vkVtu9"
+        },
+        {
+            "title": "Butterfly 3000",
+            "artist": "King Gizzard & The Lizard Wizard",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273f50080f094264011260c3bbb",
+            "link": "https://open.spotify.com/album/2I0LPpmyvAwnXvCuBf3Pcy"
+        },
+        {
+            "title": "An Overview on Phenomenal Nature",
+            "artist": "Cassandra Jenkins",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273948953438f5c2806df2948e7",
+            "link": "https://open.spotify.com/album/1NzOdSkSNmBhhg72KlNcsE"
+        },
+        {
+            "title": "Isles",
+            "artist": "Bicep",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2737002b491db4917f96f10283a",
+            "link": "https://open.spotify.com/album/0EdtTRCl3J22AnWrNpH1w9"
+        },
+        {
+            "title": "Seeking New Gods",
+            "artist": "Gruff Rhys",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2731ebac04d1687161c0d0c4752",
+            "link": "https://open.spotify.com/album/0t5GazJOs8tEpPRSlg5odm"
+        },
+        {
+            "title": "Far In",
+            "artist": "Helado Negro",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2730b6ca1305168acc7e76ca21a",
+            "link": "https://open.spotify.com/album/6VuufjwylS8CGaUcq3Vs4e"
+        },
+        {
+            "title": "Collapsed In Sunbeams",
+            "artist": "Arlo Parks",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b2730869a7bb597fe38cb1b98102",
+            "link": "https://open.spotify.com/album/42joEEymK7EIHODfNB4yug"
+        },
+        {
+            "title": "Smiling with No Teeth",
+            "artist": "Genesis Owusu",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b27306cd4a98d382c8ae61617087",
+            "link": "https://open.spotify.com/album/4j7wEZWND7GIh918rLgYHQ"
+        },
+        {
+            "title": "sketchy.",
+            "artist": "Tune-Yards",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273794185263428b644de80ca2c",
+            "link": "https://open.spotify.com/album/6clr8IqVLP2qcYxJpgSfrt"
+        },
+        {
+            "title": "A Color of the Sky",
+            "artist": "Lightning Bug",
+            "artwork": "https://i.scdn.co/image/ab67616d0000b273fecea39910af62797677c3fc",
+            "link": "https://open.spotify.com/album/5XgsP1RlwCnPU8f3NuoY2K"
         }
     ]
 }

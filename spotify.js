@@ -5,11 +5,6 @@ const readline = require('readline-sync')
 let data = {};
 let accessToken;
 
-// const rl = readline.createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-// });
-
 
 fs.readFile('src/creds.json', (err, fileData) => {
     data = JSON.parse(fileData);
@@ -83,28 +78,33 @@ function run(){
         Object.keys(data).forEach(year => {
             console.log('\x1b[33m', year);
 
+            let promises = [];
+
             data[year].forEach((album, index) => {
                 if(album.link === undefined){
                     console.log('\x1b[32m%s\x1b[0m', `#${index + 1} ${album.title} - ${album.artist}`);
-                    
-                    findAlbum(album).then(found => {
-                        console.log(found);
-                        data[year][index] = found;
-                    });
+                    promises.push(findAlbum(album, year, index));
                 }
             });
 
+            Promise.allSettled(promises).then(results => {
+                results.forEach(result => {
+                    if(result.status == 'fulfilled' && result.value.data){
+                        data[result.value.year][result.value.index] = result.value.data;
+                    }
+                });
+                fs.writeFileSync('src/data.json', JSON.stringify(data, null, 4))
+                console.log(data);
+            });
+
         });
-
-        console.log(data);
-
     });
 }
 
-async function findAlbum(album){
+async function findAlbum(album, year, index){
 
     var parts = []; 
-    parts.push('q=' + encodeURIComponent(`${album.title} ${album.artist}`));
+    parts.push('q=' + encodeURIComponent(`${album.title}`));
     parts.push('type=album');
 
     let options = {
@@ -134,25 +134,44 @@ async function findAlbum(album){
                     if(json.albums.items.length > 1){
 
                         json.albums.items.forEach((item, index) => {
-                            console.log(`${index + 1}. ${item.name} / ${item.type}`);
+                            let artists = item.artists.map(artist => {
+                                return artist.name
+                            }).join(', ');
+                            console.log(`${index + 1}. ${item.name} / ${artists} / ${item.type}`);
                         });
+                        console.log(`0. None`);
 
                         let choice = readline.question('Choose option: ');
                         chosen = parseInt(choice) - 1;
                     }
 
-                    let album = json.albums.items[chosen];
+                    if(chosen == -1 || json.albums.items.length == 0){
 
-                    let returnData = {
-                        title: album.name,
-                        artist: album.artists.map(artist => {
-                            return artist.name
-                        }).join(', '),
-                        artwork: album.images[0].url,
-                        link: album.external_urls.spotify
-                    };
+                        resolve({
+                            year: year,
+                            index: index,
+                            data: null
+                        });
 
-                    resolve(returnData);
+                    }else{
+
+                        let result = json.albums.items[chosen];
+
+                        let returnData = {
+                            title: result.name,
+                            artist: result.artists.map(artist => {
+                                return artist.name
+                            }).join(', '),
+                            artwork: result.images[0].url,
+                            link: result.external_urls.spotify
+                        };
+
+                        resolve({
+                            year: year,
+                            index: index,
+                            data: returnData
+                        });
+                    }
 
                 } catch (error) {
                     console.error(error.message);

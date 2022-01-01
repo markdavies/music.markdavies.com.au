@@ -18,6 +18,8 @@
     "es6-promise": "^4.2.8",
     "html-includes": "^4.2.0",
     "http-server": "^0.11.1",
+    "merge-images": "^2.0.0",
+    "node-canvas": "^2.7.0",
     "npm-watch": "^0.11.0",
     "postcss": "^8.3.6",
     "postcss-calc": "^8.0.0",
